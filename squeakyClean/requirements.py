@@ -1,4 +1,4 @@
-asgiref==3.5 
+asgiref==3.5.0
 astroid==2.9.3
 black==22.1.0
 bleach==4.1.0
