@@ -23,7 +23,7 @@
         "price": 15,
         "category": 5,
         "rating": 4.8,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/841277?w=620&h=480&qlt=default&fmt=auto&v=1",
         "image": "autofinessedryingtowel.jpg"
       }
     },
@@ -51,7 +51,7 @@
         "price": 12.50,
         "category": 1,
         "rating": 4.8,
-        "image_url": "",
+        "image_url": "https://m.media-amazon.com/images/I/61rCK9sp5gL._AC_SX679_.jpg",
         "image": "meguiarswashmitt.jpg"
       }
     },
@@ -65,7 +65,7 @@
         "price": 20.49,
         "category": 5,
         "rating": 4.8,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/462782?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "meguiarsdryingtowel.jpg"
       }
     },
@@ -79,7 +79,7 @@
         "price": 16.00,
         "category": 1,
         "rating": 4.6,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/289485?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "meguiarswoolwashmitt.jpg"
       }
     },
@@ -93,7 +93,7 @@
         "price": 13.00,
         "category": 2,
         "rating": 4.8,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/512829?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "meguiarsbucket.jpg"
       }
     },
@@ -107,7 +107,7 @@
         "price": 15.00,
         "category": 2,
         "rating": 4.6,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/512845?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "meguiarsgritguard.jpg"
       }
     },
@@ -121,7 +121,7 @@
         "price": 3.00,
         "category": 2,
         "rating": 4.3,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/228411?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "heavydutybucket.jpg"
       }
     },
@@ -135,7 +135,7 @@
         "price": 6.00,
         "category": 2,
         "rating": 4.5,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/679182?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "whitebucket.jpg"
       }
     },
@@ -149,7 +149,7 @@
         "price": 9.99,
         "category": 4,
         "rating": 4.6,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/351462?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "hybridsealentwax.jpg"
       }
     },
@@ -163,7 +163,7 @@
         "price": 20.00,
         "category": 3,
         "rating": 4.7,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/415654?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "autofinessesnowfoam.jpg"
       }
     },
@@ -177,7 +177,7 @@
         "price": 19.99,
         "category": 3,
         "rating": 4.9,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/538413?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "goldclassicshampoo.jpg"
       }
     },
@@ -191,7 +191,7 @@
         "price": 13.99,
         "category": 3,
         "rating": 4.5,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/550191?w=1480&h=1110&qlt=default&fmt=auto&v=1",
         "image": "avalanchesnowfoam.jpg"
       }
     },
@@ -205,7 +205,7 @@
         "price": 32.00,
         "category": 3,
         "rating": 4.8,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/836798?w=740&h=555&qlt=default&fmt=auto&v=1",
         "image": "meguiarssnowfoam.jpg"
       }
     },
@@ -219,7 +219,7 @@
         "price": 25.00,
         "category": 4,
         "rating": 4.7,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/836624/Meguiars-Hybrid-Ceramic-Wax-768ml?fmt=auto&qlt=default&$sfcc_tile$&w=340",
         "image": "meguiarsceramicwax.jpg"
       }
     },
@@ -233,7 +233,7 @@
         "price": 30.00,
         "category": 4,
         "rating": 5,
-        "image_url": "",
+        "image_url": "https://cdn.media.halfords.com/i/washford/460662/Turtle-Wax-Hybrid-Solutions-Pro-1--Done-Compound-Correct--Finish?fmt=auto&qlt=default&$sfcc_tile$&w=340",
         "image": "turtlewax.jpg"
       }
     }

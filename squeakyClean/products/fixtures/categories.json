@@ -1,1 +1,74 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "washmits/spunges", "friendly_name": "Wash mits / Sponges"}}, {"pk": 2, "model": "products.category", "fields": {"name": "buckets", "friendly_name": "Buckets"}}, {"pk": 3, "model": "products.category", "fields": {"name": "shampoo/snowfoam", "friendly_name": "Shampoo & Snow Foam"}}, {"pk": 4, "model": "products.category", "fields": {"name": "sealent/wax", "friendly_name": "Sealent / Wax"}}, {"pk": 5, "model": "products.category", "fields": {"name": "towels", "friendly_name": "Drying Towels"}}, {"pk": 6, "model": "products.category", "fields": {"name": "wheelcleaner", "friendly_name": "Wheel Cleaner"}}, {"pk": 7, "model": "products.category", "fields": {"name": "decontamination", "friendly_name": "Decon / Claybar"}}, {"pk": 8, "model": "products.category", "fields": {"name": "brushes", "friendly_name": "Brushes"}}, {"pk": 9, "model": "products.category", "fields": {"name": "accessories", "friendly_name": "Accessories"}}]
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "washmits/spunges",
+            "friendly_name": "Wash mits / Spunges"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "buckets",
+            "friendly_name": "Buckets"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "shampoo/snowfoam",
+            "friendly_name": "Shampoo & Snow Foam"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "sealent/wax",
+            "friendly_name": "Sealent / Wax"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "towels",
+            "friendly_name": "Drying Towels"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "wheelcleaner",
+            "friendly_name": "Wheel Cleaner"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "decontamination",
+            "friendly_name": "Decon / Claybar"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "brushes",
+            "friendly_name": "Brushes"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "accessories",
+            "friendly_name": "Accessories"
+        }
+    }
+]
