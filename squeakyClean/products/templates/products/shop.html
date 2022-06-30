@@ -17,8 +17,8 @@
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 {% for category in categories %}
-                <ul>
-                    <a href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a>
+                <ul class="list-unstyled">
+                    <a href="{% url 'products' %}?category={{category.name}}" class="link-dark text-decoration-none">{{ category.friendly_name }}</a>
                 </ul>
                 {% endfor %}
             </div>
