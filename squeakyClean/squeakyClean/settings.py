@@ -150,5 +150,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-DEFAULT_FROM_EMAIL = 'squeakyclean@gmail.com'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'squeakycleanshop@yahoo.com'
+EMAIL_HOST = 'smtp.mail.yahoo.com.'
+EMAIL_HOST_USER = 'squeakycleanshop@yahoo.com'
+EMAIL_HOST_PASSWORD = 'Ad0810-1'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

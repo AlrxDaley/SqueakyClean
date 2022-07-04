@@ -1,0 +1,26 @@
+[
+    {
+      "pk": 1,
+      "model": "store.special",
+      "fields": {
+        "special_name" : "special_1",
+        "special_id" : 11
+      }
+    },
+    {
+        "pk": 2,
+        "model": "store.special",
+        "fields": {
+            "special_name" : "special_2",
+            "special_id" : 7
+        }
+      },
+      {
+        "pk": 3,
+        "model": "store.special",
+        "fields": {
+            "special_name" : "special_3",
+            "special_id" : 17
+        }
+      }
+]

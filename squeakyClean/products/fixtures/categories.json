@@ -4,7 +4,7 @@
         "model": "products.category",
         "fields": {
             "name": "washmits/spunges",
-            "friendly_name": "Wash mits / Spunges"
+            "friendly_name": "Wash mitts / Spunges"
         }
     },
     {

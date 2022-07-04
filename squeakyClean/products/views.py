@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from django.core import serializers
+
 
 from .models import Product, Category
 
@@ -15,7 +15,6 @@ def all_products(request):
     # category = Category.name
     query = None
     categories = None
-    
     sort = None
     direction = None
 
@@ -81,13 +80,3 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-
-def show(request):
-    
-    name = get_object_or_404(Category.__str__)
-    
-    context = {
-        'name': name
-    }
-    
-    return render(request, 'products/shop.html', context)

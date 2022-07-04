@@ -9,12 +9,11 @@ def contactView(request):
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data['name']
             subject = form.cleaned_data['subject']
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, email, ['alexander_daley@icloud.com'])
+                send_mail(subject, message, email , ['squeakycleanshop@yahoo.com'], fail_silently=False,)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
