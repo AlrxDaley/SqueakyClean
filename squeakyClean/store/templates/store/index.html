@@ -91,6 +91,7 @@
         </a>
     </div>
     <!-- End Banner Hero -->
+    <a href="{% url 'products' %}?category={{category.name}}" class="link-light text-decoration-none">{{ category.friendly_name }}</a>
 
 
     <!-- Start Categories of The Month -->
@@ -150,73 +151,70 @@
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="" class="card-img-top" alt="...">
+                        <a href="{% url 'product_detail' product1 %}">
+                            <img class="card-img-top img-fluid" src="{{ product1.image.url }}" alt="{{ product1.name }}">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
+                                    {% if product1.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product1.rating }} / 5</small>
+                                    {% else %}
+                                        <small class="text-muted">No Rating</small>
+                                    {% endif %}
                                 </li>
-                                <li class="text-muted text-right">$240.00</li>
+                                <li class="text-muted text-right">£{{ product1.price }}</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <a href="{% url 'product_detail' product2 %}" class="h2 text-decoration-none text-dark">{{ product1.name }}</a>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                                {{ product1.description }}
                             </p>
-                            <p class="text-muted">Reviews (24)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="" class="card-img-top" alt="...">
+                        <a href="{% url 'product_detail' product3 %}">
+                            <img class="card-img-top img-fluid" src="{{ product2.image.url }}" alt="{{ product2.name }}">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
+                                    {% if product2.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product2.rating }} / 5</small>
+                                    {% else %}
+                                        <small class="text-muted">No Rating</small>
+                                    {% endif %}
                                 </li>
-                                <li class="text-muted text-right">$480.00</li>
+                                <li class="text-muted text-right">£{{ product2.price }}</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <a href="{% url 'product_detail' 17 %}" class="h2 text-decoration-none text-dark">{{ product2.name }}</a>
                             <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                                {{ product2.description }}
                             </p>
-                            <p class="text-muted">Reviews (48)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="{% url 'product_detail' 17 %}">
-                            <img class="card-img-top img-fluid" src="{{ product1.image.url }}" alt="{{ product.name }}">
+                        <a href="{% url 'product_detail' 6 %}">
+                            <img class="card-img-top img-fluid" src="{{ product3.image.url }}" alt="{{ product3.name }}">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
+                                    {% if product3.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product3.rating }} / 5</small>
+                                    {% else %}
+                                        <small class="text-muted">No Rating</small>
+                                    {% endif %}
                                 </li>
-                                <li class="text-muted text-right">$360.00</li>
+                                <li class="text-muted text-right">£{{ product3.price }}</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                            <a href="{% url 'product_detail' 6 %}" class="h2 text-decoration-none text-dark">{{ product3.name }}</a>
                             <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                                {{ product3.description }}
                             </p>
-                            <p class="text-muted">Reviews (74)</p>
                         </div>
                     </div>
                 </div>

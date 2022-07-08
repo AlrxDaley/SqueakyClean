@@ -18,9 +18,6 @@ def all_products(request):
     sort = None
     direction = None
 
-    # Printing out the 
-    print(request)
-
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -64,8 +61,6 @@ def all_products(request):
         'current_sorting': current_sorting,
         'categories': categories,
     }
-
-    print(categories)
 
     return render(request, 'products/shop.html', context)
 
