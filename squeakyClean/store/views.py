@@ -1,4 +1,8 @@
 from django.shortcuts import render, get_object_or_404
+from django.urls import path
+import os
+from django.conf import settings
+from django.conf.urls.static import static
 from products.models import Product, Category
 from .models import Special
 
@@ -24,8 +28,13 @@ def index(request):
 def about(request):
     categories = Category.objects.all
     
+    path = settings.MEDIA_ROOT
+    img_list = os.listdir(path)
+
+    
     context = {
-        'categories':categories
+        'categories':categories,
+        'images' : img_list
     }
 
     return render(request, 'store/about.html', context)
