@@ -12,9 +12,12 @@ def register_request(request):
             login(request, user)
             messages.success(request, "Registration successful." )
             return redirect("register-success")
-        print(form.errors.as_data())
-        messages.error(request, "Unsuccessful registration. Invalid information.")
-    form = SignUpForm()
+        else:
+            messages.error(request, "Unsuccessful registration. Invalid information.")
+            messages.error(request, form.errors)
+    else:
+        form = SignUpForm() 
+        
     return render (request=request, template_name="signup.html", context={"register_form":form})
 
 def register_success(request):
