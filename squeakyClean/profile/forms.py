@@ -1,4 +1,3 @@
-from typing_extensions import Required
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
@@ -9,7 +8,7 @@ from django.contrib.auth.models import User
 
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(required=True)
-    phone_number = forms.CharField(required=True)
+    phone_number = forms.IntegerField(required=True)
     postcode = forms.CharField(required=True)
     town_or_city = forms.CharField(required=True)
     street_address1 = forms.CharField(required=True)
