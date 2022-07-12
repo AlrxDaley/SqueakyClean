@@ -151,7 +151,7 @@
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="{% url 'product_detail' product1 %}">
+                        <a href="{% url 'product_detail' product1.pk %}">
                             <img class="card-img-top img-fluid" src="{{ product1.image.url }}" alt="{{ product1.name }}">
                         </a>
                         <div class="card-body">
@@ -165,7 +165,7 @@
                                 </li>
                                 <li class="text-muted text-right">£{{ product1.price }}</li>
                             </ul>
-                            <a href="{% url 'product_detail' product2 %}" class="h2 text-decoration-none text-dark">{{ product1.name }}</a>
+                            <a href="{% url 'product_detail' product1.pk %}" class="h2 text-decoration-none text-dark">{{ product1.name }}</a>
                             <p class="card-text">
                                 {{ product1.description }}
                             </p>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="{% url 'product_detail' product3 %}">
+                        <a href="{% url 'product_detail' product2.pk %}">
                             <img class="card-img-top img-fluid" src="{{ product2.image.url }}" alt="{{ product2.name }}">
                         </a>
                         <div class="card-body">
@@ -188,7 +188,7 @@
                                 </li>
                                 <li class="text-muted text-right">£{{ product2.price }}</li>
                             </ul>
-                            <a href="{% url 'product_detail' 17 %}" class="h2 text-decoration-none text-dark">{{ product2.name }}</a>
+                            <a href="{% url 'product_detail' product2.pk %}" class="h2 text-decoration-none text-dark">{{ product2.name }}</a>
                             <p class="card-text">
                                 {{ product2.description }}
                             </p>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="{% url 'product_detail' 6 %}">
+                        <a href="{% url 'product_detail' product3.pk %}">
                             <img class="card-img-top img-fluid" src="{{ product3.image.url }}" alt="{{ product3.name }}">
                         </a>
                         <div class="card-body">
@@ -211,7 +211,7 @@
                                 </li>
                                 <li class="text-muted text-right">£{{ product3.price }}</li>
                             </ul>
-                            <a href="{% url 'product_detail' 6 %}" class="h2 text-decoration-none text-dark">{{ product3.name }}</a>
+                            <a href="{% url 'product_detail' product3.pk %}" class="h2 text-decoration-none text-dark">{{ product3.name }}</a>
                             <p class="card-text">
                                 {{ product3.description }}
                             </p>

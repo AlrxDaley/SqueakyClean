@@ -33,4 +33,6 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')), 
     path('register-success/', profile.views.register_success, name='register-success'), 
     path("register/", profile.views.register_request, name="register"),
+    path("login/", profile.views.login_request, name="login"),
+    path("logout/", profile.views.logout_request, name="logout"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,8 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from django.urls import path
 import os
 from django.conf import settings
-from django.conf.urls.static import static
 from products.models import Product, Category
 from .models import Special
 
