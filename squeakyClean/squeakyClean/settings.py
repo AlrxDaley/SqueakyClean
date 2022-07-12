@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'products',
     'contactEmail',
     'widget_tweaks',
+    'profile',
  
 ]
 
