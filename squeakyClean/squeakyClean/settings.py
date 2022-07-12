@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import stripe
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -79,6 +80,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',
             ],
         },
     },
@@ -158,3 +160,13 @@ EMAIL_HOST_PASSWORD = 'Ad0810-1'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'squeakycleanshop@yahoo.com'
+
+STRIPE_SECRET_KEY = "sk_test_51KxbYkKTPcyrxfKBvarDxY3ebZ9pzbnHtf3DJ9UNOg5DjJw2dSJsM1TJ1O083o65KJF1GrWSN04VMEcO4cgqAomA00znFLcmIq"

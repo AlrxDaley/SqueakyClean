@@ -1,4 +1,4 @@
-from itertools import product
+
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from products.models import Product
@@ -18,9 +18,12 @@ def add_to_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
+    
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     bag = request.session.get('bag', {})
+    
+    print(bag.keys())
 
     if size:
         if item_id in list(bag.keys()):
